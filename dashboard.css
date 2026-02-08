@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+    background: #f4f6fb;
+    color: #333;
+}
+
+/* TOP BANNER */
+.banner {
+    height: 240px;
+    background: url("college.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(25, 0, 70, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    color: white;
+}
+
+.banner-overlay h1 {
+    font-size: 34px;
+}
+
+.banner-overlay p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box {
+    border: 2px solid #6a4cff;
+    padding: 5px 12px;
+    font-weight: bold;
+    color: #6a4cff;
+}
+
+.logo-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logout-btn {
+    background: #ff4c4c;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* CENTER WRAPPER */
+.dashboard-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* DASHBOARD (MEDIUM WIDTH) */
+.dashboard {
+    width: 100%;
+    max-width: 1000px;   /* ⭐ MEDIUM SIZE */
+}
+
+/* HEADINGS */
+.dashboard h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.card-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: #2a0a5e;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 18px;
+    color: #555;
+}
+
+.card-btn {
+    background: #6a4cff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
