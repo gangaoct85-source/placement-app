@@ -1,0 +1,6 @@
+CREATE DATABASE placement_db;
+USE placement_db;
+CREATE TABLE users(id INT AUTO_INCREMENT PRIMARY KEY, role VARCHAR(10), name VARCHAR(100), email VARCHAR(100), password VARCHAR(100));
+CREATE TABLE students(id INT AUTO_INCREMENT PRIMARY KEY, user_id INT);
+CREATE TABLE cvs(id INT AUTO_INCREMENT PRIMARY KEY, student_id INT, cv_file VARCHAR(255));
+CREATE TABLE eligibility_test(id INT AUTO_INCREMENT PRIMARY KEY, question TEXT, correct_answer VARCHAR(100));
